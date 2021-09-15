@@ -1,0 +1,41 @@
+body{
+	background: url(/images/backgrounds/2_bg.jpg) #17141f 50% 50% no-repeat;
+	background-size:100% 100%;
+	}
+.support-block{
+	text-align:center !important;
+	position:absolute;
+	top:50%; left:50%;
+	margin:-150px auto auto -230px;
+	width:460px;
+	height:300px;
+	color:rgba(231,225,254,0.70);
+	font:300 17px/40px "Quicksand", Arial, sans-serif;
+	
+	text-shadow:-1px -1px 1px rgba(255,255,255,0.2),
+   1px 1px 1px rgba(255,255,255,0.2), 
+   1px 1px 1px rgba(0,0,0,0.7); 
+	}	
+.support-icon{
+	display:block;
+	margin:auto auto 30px auto;
+	width:200px;
+	height:200px;
+	background:url(/images/support-icon.png) 50% 50% no-repeat;
+	background-size:100% auto;
+	}	
+.support-block a{
+	color:rgba(231,225,254,0.70);
+	}
+.support-block a:hover{
+	color:rgba(231,225,254,1.00);
+	}	
+@media only screen and (max-width :470px),	only screen and (max-device-width : 470px){
+.support-block{
+	width:320px;
+	padding:0 20px;
+	font:300 14px/30px "Quicksand", Arial, sans-serif;
+	margin:-150px auto auto -160px;
+}
+	
+}

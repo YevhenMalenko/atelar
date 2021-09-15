@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Reset */
+/* border:1px solid rgba(255,0,4,0.50) !important; TEST BORDER */
+::selection {
+	background:rgba(204, 59, 140, 1);
+	color:#fff;}
+::-moz-selection {
+	background:rgba(204, 59, 140, 1);
+	color:#fff;}
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+
+ol, ul{
+	list-style: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html{
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+img{
+	width:100%;
+	}
+body{
+	font:300 17px/2.2em "Open Sans", Arial, sans-serif;
+	height: 100%;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	
+	background:#fff;
+
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  -webkit-font-smoothing:antialiased;
+}
+	
+hr{	
+	filter:alpha(opacity=0); 
+	opacity:0; 
+	display:block; 
+	width:100%; 
+	height:15px; 
+	float:none; 
+	clear:both; 
+	margin:0; 
+	padding:0;}
+
+
+b, strong{font-weight:400 !important;}
+i,em{ font-style:italic !important;}
+
+
+/* Links Styles 
+================================================================= */
+a{
+	text-decoration: none; 
+	color:rgba(255, 143, 0, 1);
+	} 
+a:hover, 
+button:hover{ 
+	cursor:pointer; color:rgba(255, 197, 22, 1);
+	}
+
+.footer a{
+	color:rgba(255, 143, 0, 1);
+	}
+.footer a:hover{
+	color:rgba(255, 197, 22, 1);
+	}
+
+
+/* Headnames
+================================================================= */
+h1{
+	position:relative;
+	width:auto;
+	height:auto;
+	
+	display:block;
+	color:#fff;	
+	padding:0;
+	}
+h2{
+	position:relative;
+	width:auto;
+	font:400 24px/70px  "Open Sans", Arial, sans-serif;
+	display:block;
+	height:auto;
+	padding: 0;		
+	color: #555;
+	
+}
+
+
+
+
+/* COLUMNS
+================================================================= */
+[class*='col-'] {
+  float: left;
+  padding:0 ;
+  position:relative;
+  height:inherit;
+
+}
+[class*='col-']:after{
+	content:' ';
+	display:block;
+	width:1px;
+	height:1px;
+	visibility:hidden;
+	}
+.col-1-1 {
+  width: 100%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-5 {
+  width: 20%;
+}
+.col-1-6 {
+  width: 16.66%;  
+}
+.col-1-8 {
+  width: 12.5%;
+  
+}
+
+/* Select NONE form styles 
+================================================================= */
+input,
+button{
+	border:none; 
+	background:none;
+	-webkit-appearance: none !important;
+	-webkit-border-radius:0; 
+    border-radius:0;
+	}
+	
+input.error{
+	border:1px solid #aa2222;
+	}	
+	
+/* ANIMATION 
+================================================================= */
+
+a,
+.main-menu *,
+button,
+.icn-addow-down{
+	-webkit-transition: all 0.23s ease-out;
+	-moz-transition: all 0.23s ease-out;
+	-o-transition: all 0.23s  ease-out;
+	-ms-transition: all 0.23s  ease-out;
+	transition: all 0.23s linear;
+	}
+
+.lookshop-btn-app:active a{
+	-webkit-transition: all 0.05s ease-out;
+	-moz-transition: all 0.05s ease-out;
+	-o-transition: all 0.05s  ease-out;
+	-ms-transition: all 0.05s  ease-out;
+	transition: all 0.05s linear;}
+
+
+
+/* SELECT TEXT
+================================================================= */
+.block-8,
+.block-8 *,
+.gallery-thumbs,
+.gallery-thumbs *{
+    -moz-user-select: -moz-none !important;
+    -khtml-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important; 
+	
+	 
+}
+
+
+/* SELECT STYLE
+================================================================= */	
+
+.select-container{  /* стили для контейнера селекта */
+	width:300px;
+	margin:auto;
+	display:block;
+	position:relative;
+	text-decoration:none;
+	text-transform:none;
+	text-align:left;
+	white-space:nowrap;	
+	color:#f6f6f6;
+	font-size:20px;
+	}
+
+select{  /* стили самого select */
+	position:relative;
+	width:100%;
+	top:0;
+	left:0;
+	opacity:0;
+	height:50px;	
+	}  select:hover{cursor:pointer !important;}
+	
+select option{
+	font-size:15px;
+	line-height:30px;
+	color:#555;
+	}	
+	
+.select-header{ /* для активного заголовка select */
+	width:100%;
+	height:50px;
+	position:absolute;
+	display:block;
+	top:50%;
+	margin-top:-25px;
+	left:0;
+	text-indent:5px;
+	font:700 20px/50px "Open Sans Condensed", Impact, "Arial Narrow", Arial;
+	overflow:hidden;
+	}
+	
+.select-container span{ /* для кнопки*/
+	width:30px;
+	height:30px;
+	position:absolute;
+	display:block;
+	opacity:1.0;
+	background: url(/images/select-arrow-w.png) #ff8f00 50% 100% no-repeat;
+	background-size:30px auto;
+	right:5px;
+	top:50%;
+	margin-top:-15px;
+	}
+
+
+	
+.align-h,
+.align-v,
+.align-all{
+	position:absolute;
+	display:block;
+	}		
+/* FOCUS STYLES
+____________________________________________________________________ */		
+
+input:focus,
+button:focus{ outline: none; }
+	
+input[type="search"] {
+	-webkit-appearance: none;
+	border: none; 
+	background: #fff !important; 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+}
+input[type="search"]:focus,
+input:not([type="radio"]):not([type="checkbox"]):focus{
+	outline: none; 
+	border:2px solid rgba(255, 255, 255, 0.5);
+}
+input[type="search"]::-webkit-search-cancel-button { 
+	-webkit-appearance: none; 
+	width: 16px; 
+	height: 16px;
+	background: url(/images/btn_delsearch.png); 
+	margin-right: -2px; 
+	cursor: pointer; 
+}		
+	
+
+
