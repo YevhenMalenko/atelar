@@ -256,6 +256,10 @@ _____________________________________ */
 .block-9{
 	z-index:90;
 	height:470px;
+	background: url(../images/contact_bg.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	}	
 
 /* Become a partner */
@@ -332,7 +336,7 @@ _____________________________________ */
 	margin-bottom:23px;
 	width:100%;
 	height:72px;
-	background:url(../images/icons/line_gr@2x.png) 0 100% no-repeat;
+	background:url(../images/icons/line_white@2x.png) 0 100% no-repeat;
 	background-size:34px auto;
 
 	}		
@@ -901,7 +905,26 @@ opacity:1.0;
 
 
 
-
+.block-clients {
+	z-index: 20;
+}
+.block-clients .h2-name {
+	position: static;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	margin-top: 70px;
+	text-align: center;
+	background: url(../images/icons/line_gr@2x.png) 50% 100% no-repeat;
+	background-size: 34px auto;
+}
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.client {
+	width: 25%;
+}
 
 
 
@@ -923,7 +946,8 @@ _____________________________________________________ */
 	text-align:center;
 	max-width:660px;
 	top:152px;
-	font:400 
+	color: rgba(255,255,255,0.85);
+
 
 	}
 
@@ -932,6 +956,9 @@ _____________________________________________________ */
 	line-height:73px;
 	top:59px;
 	}	
+.block-9 .h2-name h2 {
+	color: rgba(255,255,255,0.85);
+}
 		
 .soc-icons{
 	display:block;
@@ -985,6 +1012,7 @@ _____________________________________________________ */
 	z-index:20;
 	background:url(../images/icons/scroll_top_n.png) 50% 0 no-repeat;
 	background-size:100% auto;
+	opacity: .85;
 	}
 .btn-footer-scroll-top:hover{
 	-webkit-animation: bzoom .2s  ease-out forwards;
@@ -992,7 +1020,8 @@ _____________________________________________________ */
     -ms-animation: bzoom .2s   ease-out forwards;
     -o-animation: bzoom .2s   ease-out forwards;
     animation: bzoom .2s   ease-out forwards;
-	background-image:url(../images/icons/scroll_top_h.png);	
+		opacity: 1;
+	/* background-image:url(../images/icons/scroll_top_h.png);	 */
 	}
 
 
@@ -1153,7 +1182,7 @@ img.qr {max-width: 280px;margin-bottom:10px;}
 .relative video {width: 268px;/*margin: 11px 0 0 12px;*/border-radius: 40px;}
 .video_maska {display:none;background: url(../images/video_bg.png)no-repeat center center;position: absolute;top: 0;left: 0;height: 100%;width: 272px;background-size: 272px;}
 .relative img {position: absolute;height: 540px;background-color: transparent;width: 282px;display:none;}
-.email {color:#8f8f8f;}
+.email {color:#fff;}
 body.magnificpopupnoscroll{overflow-y: hidden !important;}
 	
 	
