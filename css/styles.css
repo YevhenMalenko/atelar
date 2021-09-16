@@ -13,7 +13,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6a13dbf', e
 	margin-left:-12%;
 	}
 #qLoverlay  #qLpercentage{
-	font:400 18px Comfortaa, Arial, cursive;
+	font:400 18px "Comfortaa", Arial, cursive;
 	font-size:2.5em !important;
 	letter-spacing:7px;
 	margin-top:-80px !important;
@@ -256,6 +256,7 @@ _____________________________________ */
 .block-9{
 	z-index:90;
 	height:470px;
+	min-height: 470px;
 	background: url(../images/contact_bg.jpg) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
@@ -336,7 +337,7 @@ _____________________________________ */
 	margin-bottom:23px;
 	width:100%;
 	height:72px;
-	background:url(../images/icons/line_white@2x.png) 0 100% no-repeat;
+	background:url(../images/icons/line_gr@2x.png) 0 100% no-repeat;
 	background-size:34px auto;
 
 	}		
@@ -655,8 +656,19 @@ ______________________________________________________ */
 	background:url(../images/line/icn_line_06.png) 50% 50% no-repeat;
 	background-size:100% auto;
 	}	
-	
 .icn-line-07{
+	top:3340px;
+	background:url(../images/line/icn_line_05.png) 50% 50% no-repeat;
+	background-size:100% auto;
+	}	
+
+.icn-line-08{
+	top:3900px;
+	background:url(../images/line/icn_line_06.png) 50% 50% no-repeat;
+	background-size:100% auto;
+	}	
+	
+.icn-line-09{
 	bottom:0;
 	background:url(../images/line/icn_line_07.png) 50% 50% no-repeat;
 	background-size:100% auto;
@@ -922,8 +934,15 @@ opacity:1.0;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.press-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 28px;
+}
 .client {
 	width: 25%;
+	margin-bottom: 10px;
 }
 
 
@@ -947,15 +966,14 @@ _____________________________________________________ */
 	max-width:660px;
 	top:152px;
 	color: rgba(255,255,255,0.85);
-
-
-	}
-
+}
 .block-9 .h2-name{
 	height:72px;
 	line-height:73px;
 	top:59px;
-	}	
+	background: url(../images/icons/line_white@2x.png) 50% 100% no-repeat;
+	background-size: 34px auto;
+}	
 .block-9 .h2-name h2 {
 	color: rgba(255,255,255,0.85);
 }
